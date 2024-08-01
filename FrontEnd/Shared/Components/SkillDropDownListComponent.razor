@@ -1,0 +1,7 @@
+﻿<MudSelect T="int" Label="@SkillModel.SkillName" @bind-Value="UserSkillDisplayModel.SkillScore">
+    @for (var j = 0; j <= 10; j++)
+    {
+        var localVariable = j;
+        <MudSelectItem T="int" Value="@localVariable">@localVariable</MudSelectItem>
+    }
+</MudSelect>
